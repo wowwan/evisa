@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Proc Speeds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Short desc</th>
+      <th>Long desc</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @proc_speeds.each do |proc_speed| %>
+      <tr>
+        <td><%= proc_speed.short_desc %></td>
+        <td><%= proc_speed.long_desc %></td>
+        <td><%= proc_speed.price %></td>
+        <td><%= link_to 'Show', proc_speed %></td>
+        <td><%= link_to 'Edit', edit_proc_speed_path(proc_speed) %></td>
+        <td><%= link_to 'Destroy', proc_speed, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Proc speed', new_proc_speed_path %>

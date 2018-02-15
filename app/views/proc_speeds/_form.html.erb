@@ -1,0 +1,29 @@
+<%= form_for(@proc_speed) do |f| %>
+  <% if @proc_speed.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@proc_speed.errors.count, "error") %> prohibited this proc_speed from being saved:</h2>
+
+      <ul>
+      <% @proc_speed.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :short_desc %><br>
+    <%= f.text_area :short_desc %>
+  </div>
+  <div class="field">
+    <%= f.label :long_desc %><br>
+    <%= f.text_area :long_desc %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

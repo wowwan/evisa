@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Purpose:</strong>
+  <%= @visa.purpose %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @visa.title %>
+</p>
+
+<p>
+  <strong>Short desc:</strong>
+  <%= @visa.short_desc %>
+</p>
+
+<p>
+  <strong>Long desc:</strong>
+  <%= @visa.long_desc %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @visa.price %>
+</p>
+
+<%= link_to 'Edit', edit_visa_path(@visa) %> |
+<%= link_to 'Back', visas_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order_id: 
+  number: MyString
+  finish_date: 2018-02-15
+  start_date: 2018-02-15
+  birtday: 2018-02-15
+  gender: MyString
+  nationallity: MyString
+
+two:
+  order_id: 
+  number: MyString
+  finish_date: 2018-02-15
+  start_date: 2018-02-15
+  birtday: 2018-02-15
+  gender: MyString
+  nationallity: MyString

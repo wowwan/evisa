@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  visa: MyString
+  entry_date: 2018-02-15
+  fast_track: false
+  email: MyString
+  name: MyString
+  phone: MyString
+  speed: MyString
+  comment: MyText
+  QTY: 1
+  amount: 1
+  status: MyString
+
+two:
+  visa: MyString
+  entry_date: 2018-02-15
+  fast_track: false
+  email: MyString
+  name: MyString
+  phone: MyString
+  speed: MyString
+  comment: MyText
+  QTY: 1
+  amount: 1
+  status: MyString

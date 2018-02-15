@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  purpose_id: 
+  title: MyString
+  short_desc: MyText
+  long_desc: MyText
+  price: 1
+
+two:
+  purpose_id: 
+  title: MyString
+  short_desc: MyText
+  long_desc: MyText
+  price: 1

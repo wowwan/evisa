@@ -1,0 +1,92 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Visa:</strong>
+  <%= @order.visa %>
+</p>
+
+<p>
+  <strong>Entry date:</strong>
+  <%= @order.entry_date %>
+</p>
+
+<p>
+  <strong>Fast track:</strong>
+  <%= @order.fast_track %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @order.email %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @order.name %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @order.phone %>
+</p>
+
+<p>
+  <strong>Speed:</strong>
+  <%= @order.speed %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @order.comment %>
+</p>
+
+<p>
+  <strong>Qty:</strong>
+  <%= @order.QTY %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @order.amount %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @order.status %>
+</p>
+
+<%= form_for [@order, @order.passports.build] do |f| %>
+  <%= f.label :number %><br>
+  <%= f.text_field :number %><br>
+  <%= f.label "Passport start" %><br>
+  <%= f.date_select :finish_date %><br>
+  <%= f.label "Passport finish" %><br>
+  <%= f.date_select :start_date %><br>
+  <%= f.label "Date of birth" %><br>
+  <%= f.date_select :birtday %><br>
+  <%= f.label "Select gender" %><br>
+  <%= f.text_field :gender %><br>
+  <%= f.label "Select nationality" %><br>
+  <%= f.text_field :nationallity %><br>
+  <%= f.submit "Add passport" %>
+<% end %>
+
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>
+
+<% @passports.each do |p| %>
+  <ul>
+   <li><%= p.number %></li><%= link_to 'Destroy', @passport, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+   <li><%= p.start_date %></li>
+   <li><%= p.finish_date %></li>
+   <li><%= p.gender %></li>
+   <li><%= p.birtday %></li>
+   <li><%= p.nationallity %></li>
+  </ul>
+<% end %>
+
+<p><%= @Visa.name.titleize %></p>
+
+
+

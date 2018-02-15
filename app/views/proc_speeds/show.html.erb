@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <strong>Short desc:</strong>
+  <%= @proc_speed.short_desc %>
+</p>
+
+<p>
+  <strong>Long desc:</strong>
+  <%= @proc_speed.long_desc %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @proc_speed.price %>
+</p>
+
+<%= link_to 'Edit', edit_proc_speed_path(@proc_speed) %> |
+<%= link_to 'Back', proc_speeds_path %>
